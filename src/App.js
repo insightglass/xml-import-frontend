@@ -18,7 +18,7 @@ export default function XmlImportForm() {
     formData.append("job_number", jobNumber);
 
     try {
-      const res = await fetch("https://xml-import-backend.onrender.com/upload-xml/", {
+      const res = await fetch("https://xml-import-frontend.onrender.com", {
         method: "POST",
         body: formData
       });
